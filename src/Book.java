@@ -26,4 +26,9 @@ public Author getAuthor() {
 public void setPublicationYear(int publicationYear) {
     this.publicationYear = publicationYear;
 }
+
+    @Override
+    public String toString() {
+        return name + " (" + publicationYear + ")" + author.toString();
+    }
 }
